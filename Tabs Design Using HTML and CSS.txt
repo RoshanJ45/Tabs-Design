@@ -1,0 +1,67 @@
+<html>
+<body>
+<div class="tabs-container">
+<div class="tabs">
+<input type="radio" id="tab1" name="tab"
+checked>
+<label for="tab1">Tab 1</label>
+<input type="radio" id="tab2"
+name="tab">
+<label for="tab2">Tab 2</label>
+<input type="radio" id="tab3"
+name="tab">
+<label for="tab3">Tab 3</label>
+<div class="tc c1">Content for Tab
+1</div>
+<div class="tc c2">Content for Tab
+2</div>
+<div class="tc c3">Content for Tab
+3</div>
+</div>
+<Style>
+    body {
+font-family: Arial, sans-serif;
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100vh;
+margin: 0;
+background: #333333;
+}
+.tabs-container {
+width: 360px;
+background: #fff;
+border-radius: 10px;
+overflow: hidden;
+}
+.tabs label {
+display: inline-block;
+width: 32.5%;
+background: #ddd;
+text-align: center;
+cursor: pointer;
+padding: 10px 0;
+}
+.tabs input {
+display: none;
+}
+.tabs input:checked + label {
+background: #3498db;
+color: #fff;
+}
+.tc {
+display: none;
+padding: 20px;
+font-size:
+16px;
+color: #333;
+}
+#tab1:checked ~ .c1,
+#tab2:checked ~.c2,
+#tab3:checked ~.c3 {
+display: block;
+}
+</Style>
+</div>
+</body>
+</html>
